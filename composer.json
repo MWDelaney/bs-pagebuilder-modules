@@ -1,8 +1,8 @@
 {
-  "name": "thewalkergroup/bs-pagebuiler-modules",
+  "name": "mwdelaney/bs-pagebuiler-modules",
   "description": "Bootstrap styled modules for PageBuilder.",
   "keywords": ["wordpress", "plugin", "pagebuilder", "bootstrap"],
-  "homepage": "https://github.com/thewalkergroup/walker-theme-setup",
+  "homepage": "https://github.com/MWDelaney/bs-pagebuilder-modules",
   "license": "MIT",
   "authors": [
     {
