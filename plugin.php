@@ -14,7 +14,7 @@ define( 'FL_MODULE_BS_URL', plugins_url( '/', __FILE__ ) );
  */
 function fl_load_module_bs() {
 	if ( class_exists( 'FLBuilder' ) ) {
-			require_once 'bs/bsbutton.php';
+			require_once 'bsbutton/bsbutton.php';
 	    //require_once 'basic-example/basic-example.php';
 	    //require_once 'example/example.php';
 	}
