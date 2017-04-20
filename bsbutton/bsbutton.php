@@ -92,7 +92,7 @@ class BSButtonModule extends FLBuilderModule {
 /**
  * Register the module and its form settings.
  */
-FLBuilder::register_module('WSSButtonModule', array(
+FLBuilder::register_module('BSButtonModule', array(
 	'general'       => array(
 		'title'         => __('General', 'fl-builder'),
 		'sections'      => array(
