@@ -1,0 +1,17 @@
+{
+  "name": "thewalkergroup/bs-pagebuiler-modules",
+  "description": "Bootstrap styled modules for PageBuilder.",
+  "keywords": ["wordpress", "plugin", "pagebuilder", "bootstrap"],
+  "homepage": "https://github.com/thewalkergroup/walker-theme-setup",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Michael W. Delaney",
+      "email": "michael@michaeldelaney.me"
+    }
+  ],
+  "type": "wordpress-muplugin",
+  "require": {
+    "php": ">=5.3.2"
+  }
+}
