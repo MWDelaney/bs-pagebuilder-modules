@@ -78,7 +78,7 @@ class BSCalloutModule extends FLBuilderModule {
 	 */
 	public function render_title()
 	{
-    if(isset($this->settings->title)) {
+  	  if(!empty($this->settings->title)) {
   		echo '<' . $this->settings->title_tag . ' class="fl-callout-title">';
 
   		$this->render_image('left-title');
