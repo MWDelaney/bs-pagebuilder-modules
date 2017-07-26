@@ -78,27 +78,29 @@ class BSCalloutModule extends FLBuilderModule {
 	 */
 	public function render_title()
 	{
-		echo '<' . $this->settings->title_tag . ' class="fl-callout-title">';
+    if(isset($this->settings->title)) {
+  		echo '<' . $this->settings->title_tag . ' class="fl-callout-title">';
 
-		$this->render_image('left-title');
+  		$this->render_image('left-title');
 
-		echo '<span>';
+  		echo '<span>';
 
-		if(!empty($this->settings->link)) {
-			echo '<a href="' . $this->settings->link . '" target="' . $this->settings->link_target . '" class="fl-callout-title-link">';
-		}
+  		if(!empty($this->settings->link)) {
+  			echo '<a href="' . $this->settings->link . '" target="' . $this->settings->link_target . '" class="fl-callout-title-link">';
+  		}
 
-		echo $this->settings->title;
+  		echo $this->settings->title;
 
-		if(!empty($this->settings->link)) {
-			echo '</a>';
-		}
+  		if(!empty($this->settings->link)) {
+  			echo '</a>';
+  		}
 
-		echo '</span>';
+  		echo '</span>';
 
-		$this->render_image('right-title');
+  		$this->render_image('right-title');
 
-		echo '</' . $this->settings->title_tag . '>';
+  		echo '</' . $this->settings->title_tag . '>';
+    }
 	}
 
 	/**
