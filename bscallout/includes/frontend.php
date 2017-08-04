@@ -6,11 +6,14 @@
 
 	?>
 	<div class="fl-callout-content">
+    <?php
+
+    // Image above title
+    $module->render_image('above-title');
+
+    ?>
 		<div class="fl-callout-text-wrap">
 			<?php
-
-			// Image above title
-			$module->render_image('above-title');
 
 			// Title
 			$module->render_title();
