@@ -12,9 +12,9 @@
     $module->render_image('above-title');
 
     ?>
-		<div class="fl-callout-text-wrap">
+    <div class="fl-callout-text-wrap">
       <div class="card">
-        <div class="card-block">
+        <div class="card-body">
 			<?php
 			// Title
 			$module->render_title();
