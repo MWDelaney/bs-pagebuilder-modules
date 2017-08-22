@@ -125,8 +125,19 @@ FLBuilder::register_module('BSButtonModule', array(
 							'outline-info'					=> __('Outline Info', 'fl-builder'),
 							'outline-success'				=> __('Outline Success', 'fl-builder'),
 							'outline-warning'				=> __('Outline Warning', 'fl-builder'),
-							'outline-danger'				=> __('Outline Danger', 'fl-builder')
-						)
+							'outline-danger'				=> __('Outline Danger', 'fl-builder'),
+              'other'				          => __('Other', 'fl-builder')
+						),
+            'toggle' 		=> array(
+							'other'			=> array(
+								'fields' 		=> array('button_type_other')
+							)
+					   )
+           ),
+          'button_type_other' => array(
+						'type'          => 'text',
+						'label'         => __('Button Type', 'fl-builder'),
+						'default'       => __('', 'fl-builder'),
 					),
 					'button_size' => array(
 						'type'          => 'select',
