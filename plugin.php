@@ -16,6 +16,7 @@ function fl_load_module_bs() {
 	if ( class_exists( 'FLBuilder' ) ) {
 			require_once 'bsbutton/bsbutton.php';
       require_once 'bscallout/bscallout.php';
+      require_once 'bscard/bscard.php';
 	    //require_once 'basic-example/basic-example.php';
 	    //require_once 'example/example.php';
 	}
