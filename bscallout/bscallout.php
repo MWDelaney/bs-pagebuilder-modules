@@ -140,7 +140,7 @@ class BSCalloutModule extends FLBuilderModule {
 				'link_target'       => $this->settings->link_target,
 				'text'              => $this->settings->cta_text,
 				'width'             => $this->settings->btn_width,
-        'button_type'       => $this->settings->button_type,
+        'button_type'       => ($this->settings->button_type == 'other') ? $this->settings->button_type_other : $this->settings->button_type,
         'button_size'       => $this->settings->button_size,
 			);
 
@@ -554,8 +554,19 @@ FLBuilder::register_module('BSCalloutModule', array(
               'outline-info'					=> __('Outline Info', 'fl-builder'),
               'outline-success'				=> __('Outline Success', 'fl-builder'),
               'outline-warning'				=> __('Outline Warning', 'fl-builder'),
-              'outline-danger'				=> __('Outline Danger', 'fl-builder')
-            )
+              'outline-danger'				=> __('Outline Danger', 'fl-builder'),
+              'other'				          => __('Other', 'fl-builder')
+            ),
+            'toggle' 		=> array(
+							'other'			=> array(
+								'fields' 		=> array('button_type_other')
+							)
+					   )
+           ),
+          'button_type_other' => array(
+						'type'          => 'text',
+						'label'         => __('Button Type', 'fl-builder'),
+						'default'       => __('', 'fl-builder'),
           ),
           'button_size' => array(
             'type'          => 'select',
