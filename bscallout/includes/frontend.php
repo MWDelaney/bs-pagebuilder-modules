@@ -13,8 +13,6 @@
 
     ?>
     <div class="fl-callout-text-wrap">
-      <div class="card">
-        <div class="card-body">
 			<?php
 			// Title
 			$module->render_title();
@@ -25,8 +23,6 @@
 			// Text
 			$module->render_text();
       ?>
-      </div> <!-- /.card-block -->
-    </div> <!-- /.card -->
       <?php
 			// Link CTA
 			$module->render_link();
