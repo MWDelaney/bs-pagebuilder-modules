@@ -21,7 +21,7 @@ function fl_load_module_bs() {
 		require_once 'bscta/bscta.php';
 		
 		// New modules
-		require_once 'bsbutton/bscard.php';
+		require_once 'bscard/bscard.php';
 
 	}
 }
